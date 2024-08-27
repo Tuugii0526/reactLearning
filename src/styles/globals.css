@@ -7,6 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+.show
+{
+  transform: translateX(0) ;
+  transition: translate 200ms ease-in ;
+}
 .board-row
 {
   display: flex;
