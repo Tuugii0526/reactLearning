@@ -6,6 +6,7 @@ import { ReplacingArray } from "@/components/AddingInteractivity/ReplacingArray"
 import { SculptorList } from "@/components/AddingInteractivity/SculptorList";
 import { StateAsASnapshot } from "@/components/AddingInteractivity/StateAsASnapshot";
 import { StateOverTime } from "@/components/AddingInteractivity/StateOverTime";
+import EditProfile from "@/components/ManagingState/Problem1ReactingToInput";
 import { ReactingToInputWithState } from "@/components/ManagingState/ReactingToInputWithState";
 import { FilterableProductTable } from "@/components/QuickStart/ThinkingInReact/FilterableProductTable";
 import { ScrollOne } from "@/components/Scroll/ScrollOne/ScrollOne-AppearsAsSoonAsScroll";
@@ -15,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
-    <StateAsASnapshot/>
+    {/* <StateAsASnapshot/>
     <RenderingTakesASnapshotInTime/>
     <Container>
       <StateOverTime/>
@@ -26,6 +27,9 @@ export default function Home() {
   <ArtBucketListImmer/>
   <Container>
     <ReactingToInputWithState/>
+  </Container> */}
+  <Container>
+  <EditProfile/>
   </Container>
   </div>
 

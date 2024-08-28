@@ -21,7 +21,7 @@ export  const ReactingToInputWithState=()=>{
     const submitForm=(answer)=>{
         return new Promise((resolve,reject)=>{
             setTimeout(()=>{
-                if(answer!=='ub' || answer!=='ulaanbaatar')
+                if(answer!=='ub')
                 {
                     reject(new Error('Good guess but a wrong answer.Try again !'))
                 }
