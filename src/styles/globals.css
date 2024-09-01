@@ -29,4 +29,38 @@
 {
   color:red
 }
+.counter
+{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 1px 2px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.fancy
+{
+  border: 2px solid yellow;
+  box-shadow: 0 0 1px 2px yellow;
+  color: red;
+}
+.hover
+{
+  background-color: antiquewhite;
+}
+
+.section 
+{
+  padding: 10px;
+  height:fit-content;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 
