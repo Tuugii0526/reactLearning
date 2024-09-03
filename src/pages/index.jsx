@@ -54,7 +54,7 @@ export default function Home() {
      
   // return <ImmerAvoidDeeplyNestedState/>
   return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
-    <Container>
+    {/* <Container>
       <StateIsTiedToAPositionInTheRenderTree/>
     </Container>
     <Container>
@@ -72,6 +72,9 @@ export default function Home() {
   </Container>
     <div className="min-w-[300px]  h-fit shadow-sm ring-1 p-3 rounded-sm ">
     <ContextAlternativeToPassingProps/>
-    </div>
+    </div> */}
+    <Container>
+      
+    </Container>
  </div>
 }
