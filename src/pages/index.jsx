@@ -6,6 +6,10 @@ import { ReplacingArray } from "@/components/AddingInteractivity/ReplacingArray"
 import { SculptorList } from "@/components/AddingInteractivity/SculptorList";
 import { StateAsASnapshot } from "@/components/AddingInteractivity/StateAsASnapshot";
 import { StateOverTime } from "@/components/AddingInteractivity/StateOverTime";
+import { ClickMe } from "@/components/EscapeHatches/ReferencingValuesWithRefs/ClickMe";
+import FixABrokenChatInput from "@/components/EscapeHatches/ReferencingValuesWithRefs/FixABrokenChatInput";
+import { StopwatchOne } from "@/components/EscapeHatches/ReferencingValuesWithRefs/StopwatchOne";
+import { StopwatchTwo } from "@/components/EscapeHatches/ReferencingValuesWithRefs/StopwatchTwo";
 import { AvoidDeeplyNestedState } from "@/components/ManagingState/AvoidDeeplyNestedState";
 import { ImmerUsingReducerToDo } from "@/components/ManagingState/Extracting-state-logic-into-a-reducer/ImmerUsingReducerToDo";
 import { UsingReducerToDo } from "@/components/ManagingState/Extracting-state-logic-into-a-reducer/UsingReducerToDo";
@@ -53,28 +57,46 @@ export default function Home() {
   // return <AvoidDeeplyNestedState/>
      
   // return <ImmerAvoidDeeplyNestedState/>
-  return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
-    {/* <Container>
-      <StateIsTiedToAPositionInTheRenderTree/>
-    </Container>
-    <Container>
-      <RenderTheSecondCounter/>
-    </Container>
-    <SameComponentAtTheSamePosition/>
-  <TeacherSameComponentAtTheSamePosition/>
-  <DifferentComponentsAtTheSamePositionResetState/>
-  <FixMisplacedStateInTheList/>
-  <Container>
-    <UsingReducerToDo/>
-  </Container>
-  <Container>
-    <ImmerUsingReducerToDo/>
-  </Container>
-    <div className="min-w-[300px]  h-fit shadow-sm ring-1 p-3 rounded-sm ">
-    <ContextAlternativeToPassingProps/>
-    </div> */}
-    <Container>
+//   return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
+//     <Container>
+//       <StateIsTiedToAPositionInTheRenderTree/>
+//     </Container>
+//     <Container>
+//       <RenderTheSecondCounter/>
+//     </Container>
+//     <SameComponentAtTheSamePosition/>
+//   <TeacherSameComponentAtTheSamePosition/>
+//   <DifferentComponentsAtTheSamePositionResetState/>
+//   <FixMisplacedStateInTheList/>
+//   <Container>
+//     <UsingReducerToDo/>
+//   </Container>
+//   <Container>
+//     <ImmerUsingReducerToDo/>
+//   </Container>
+//     <div className="min-w-[300px]  h-fit shadow-sm ring-1 p-3 rounded-sm ">
+//     <ContextAlternativeToPassingProps/>
+//     </div>
+//     <Container>
       
-    </Container>
- </div>
+//     </Container>
+//  </div>
+// }
+
+
+// for escape hatches
+return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
+  <Container>
+    <ClickMe/>
+  </Container>
+  <Container>
+    <StopwatchOne/>
+  </Container>
+ <Container>
+  <StopwatchTwo/>
+ </Container>
+ <Container>
+  <FixABrokenChatInput/>
+ </Container>
+</div>
 }
