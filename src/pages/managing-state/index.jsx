@@ -12,7 +12,7 @@ import Link from "next/link"
 
 const Page=()=>{
     return <div className="w-full h-screen pt-20 grid grid-cols-1 justify-items-center items-center gap-[60px] overflow-scroll lg:grid-cols-3 md:grid-cols-2 relative">
-           <div className="h-10 w-1/2 absolute inset-x-0 mx-auto flex justify-around top-2">
+           <div className="h-10 w-1/2 bg-white fixed inset-x-0 mx-auto flex justify-around top-2">
           <Link href={"/"}>
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400">Go To Home</button></Link>
           <Link href={"/escape-hatch"}>
