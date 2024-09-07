@@ -7,96 +7,36 @@ import { SculptorList } from "@/components/AddingInteractivity/SculptorList";
 import { StateAsASnapshot } from "@/components/AddingInteractivity/StateAsASnapshot";
 import { StateOverTime } from "@/components/AddingInteractivity/StateOverTime";
 import { ClickMe } from "@/components/EscapeHatches/ReferencingValuesWithRefs/ClickMe";
-import FixABrokenChatInput from "@/components/EscapeHatches/ReferencingValuesWithRefs/FixABrokenChatInput";
-import { StopwatchOne } from "@/components/EscapeHatches/ReferencingValuesWithRefs/StopwatchOne";
-import { StopwatchTwo } from "@/components/EscapeHatches/ReferencingValuesWithRefs/StopwatchTwo";
-import { AvoidDeeplyNestedState } from "@/components/ManagingState/AvoidDeeplyNestedState";
-import { ImmerUsingReducerToDo } from "@/components/ManagingState/Extracting-state-logic-into-a-reducer/ImmerUsingReducerToDo";
-import { UsingReducerToDo } from "@/components/ManagingState/Extracting-state-logic-into-a-reducer/UsingReducerToDo";
-import { GroupRelatedState } from "@/components/ManagingState/GroupRelatedState";
-import { ImmerAvoidDeeplyNestedState } from "@/components/ManagingState/ImmerAvoidDeeplyNestedState";
-import { ContextAlternativeToPassingProps } from "@/components/ManagingState/Passing-data-deeply-with-context/ContextAlternativeToPassingProps";
-import { DifferentComponentsAtTheSamePositionResetState } from "@/components/ManagingState/Preserving-resetting-state/DifferentComponentsAtTheSamePositionResetState";
-import { FixMisplacedStateInTheList } from "@/components/ManagingState/Preserving-resetting-state/FixMisplacedStateInTheList";
-import { RenderTheSecondCounter } from "@/components/ManagingState/Preserving-resetting-state/RenderTheSecondCounter";
-import { SameComponentAtTheSamePosition } from "@/components/ManagingState/Preserving-resetting-state/SameComponentAtTheSamePosition";
-import { StateIsTiedToAPositionInTheRenderTree } from "@/components/ManagingState/Preserving-resetting-state/StateIsTiedToAPositionInTheRenderTree";
-import TeacherSameComponentAtTheSamePosition from "@/components/ManagingState/Preserving-resetting-state/TeacherSameComponentAtTheSamePosition";
 import EditProfile from "@/components/ManagingState/Problem1ReactingToInput";
 import { ReactingToInputWithState } from "@/components/ManagingState/ReactingToInputWithState";
-import MovingDot from "@/components/ManagingState/TeacherGroupRelatedState";
-import { FilterableProductTable } from "@/components/QuickStart/ThinkingInReact/FilterableProductTable";
-import { ScrollOne } from "@/components/Scroll/ScrollOne/ScrollOne-AppearsAsSoonAsScroll";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import Link from "next/link";
 export default function Home() {
-  // return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
-  //   <StateAsASnapshot/>
-  //   <RenderingTakesASnapshotInTime/>
-  //   <Container>
-  //     <StateOverTime/>
-  //   </Container>
-  // <SculptorList/>
-  // <ReplacingArray/>
-  // <ArtBucketList/>
-  // <ArtBucketListImmer/>
-  // <Container>
-  //   <ReactingToInputWithState/>
-  // </Container>
-  // <Container>
-  // <EditProfile/>
-  // </Container>
-
-  // </div>
-
-
-  // return <GroupRelatedState/>
-
-  // return <AvoidDeeplyNestedState/>
-     
-  // return <ImmerAvoidDeeplyNestedState/>
-//   return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
-//     <Container>
-//       <StateIsTiedToAPositionInTheRenderTree/>
-//     </Container>
-//     <Container>
-//       <RenderTheSecondCounter/>
-//     </Container>
-//     <SameComponentAtTheSamePosition/>
-//   <TeacherSameComponentAtTheSamePosition/>
-//   <DifferentComponentsAtTheSamePositionResetState/>
-//   <FixMisplacedStateInTheList/>
-//   <Container>
-//     <UsingReducerToDo/>
-//   </Container>
-//   <Container>
-//     <ImmerUsingReducerToDo/>
-//   </Container>
-//     <div className="min-w-[300px]  h-fit shadow-sm ring-1 p-3 rounded-sm ">
-//     <ContextAlternativeToPassingProps/>
-//     </div>
-//     <Container>
-      
-//     </Container>
-//  </div>
-// }
-
-
-// for escape hatches
-return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-3 overflow-scroll lg:grid-cols-3 md:grid-cols-2 ">
+  return <div className="w-full h-screen pt-10 grid grid-cols-1 justify-items-center items-center gap-[60px] overflow-scroll lg:grid-cols-3 md:grid-cols-2  relative">
+    <div className="h-10 w-1/2 absolute inset-x-0 mx-auto flex justify-around top-2">
+          <Link href={"/managing-state"}>
+          <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400">Go To Managing state</button></Link>
+          <Link href={"/escape-hatch"}>
+          <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400" >Go To Escaping hatches</button></Link>
+          </div>
+    <StateAsASnapshot/>
+    <RenderingTakesASnapshotInTime/>
+    <Container>
+      <StateOverTime/>
+    </Container>
+  <SculptorList/>
+  <ReplacingArray/>
+  <ArtBucketList/>
+  <ArtBucketListImmer/>
   <Container>
+    <ReactingToInputWithState/>
+  </Container>
+  <Container>
+  <EditProfile/>
+  </Container>
+   <Container>
     <ClickMe/>
   </Container>
-  <Container>
-    <StopwatchOne/>
-  </Container>
- <Container>
-  <StopwatchTwo/>
- </Container>
- <Container>
-  <FixABrokenChatInput/>
- </Container>
-</div>
+  </div>
 }
+
+  
