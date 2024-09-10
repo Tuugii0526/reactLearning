@@ -63,4 +63,8 @@
   border-radius: 10px;
 }
 
-
+.srolledInto
+{
+  box-shadow:10px 5px 5px red;
+  border:1px solid slategray
+}
