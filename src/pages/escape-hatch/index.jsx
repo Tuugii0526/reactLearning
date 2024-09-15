@@ -9,6 +9,8 @@ import { StopwatchOne } from "@/components/EscapeHatches/ReferencingValuesWithRe
 import { StopwatchTwo } from "@/components/EscapeHatches/ReferencingValuesWithRefs/StopwatchTwo"
 import Link from "next/link"
 import { FlushSync } from "@/components/EscapeHatches/manipulating-the-dom-with-refs/FlushSync"
+import { Challenge3 } from "@/components/EscapeHatches/synchronizing-with-effects/Challenge3"
+import { Challenge4 } from "@/components/EscapeHatches/synchronizing-with-effects/Challenge4"
 
  const Page=()=>{
     return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-[60px] overflow-scroll lg:grid-cols-3 md:grid-cols-2">
@@ -40,6 +42,12 @@ import { FlushSync } from "@/components/EscapeHatches/manipulating-the-dom-with-
   </Container>
   <WithoutFlushSync/>
   <FlushSync/>
+  <Container>
+    <Challenge3/>
+  </Container>
+  <Container>
+    <Challenge4/>
+  </Container>
     </div>
 }
 export default Page

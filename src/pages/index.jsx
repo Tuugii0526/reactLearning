@@ -17,6 +17,9 @@ export default function Home() {
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400">Go To Managing state</button></Link>
           <Link href={"/escape-hatch"}>
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400" >Go To Escaping hatches</button></Link>
+          <Link href={"/experiment"}>
+          <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400">Go to Experiment</button>
+          </Link>
           </div>
     <StateAsASnapshot/>
     <RenderingTakesASnapshotInTime/>

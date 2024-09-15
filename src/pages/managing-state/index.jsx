@@ -17,6 +17,7 @@ const Page=()=>{
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400">Go To Home</button></Link>
           <Link href={"/escape-hatch"}>
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400" >Go To Escaping hatches</button></Link>
+         
           </div>
  <Container>
       <StateIsTiedToAPositionInTheRenderTree/>
