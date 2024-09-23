@@ -11,9 +11,12 @@ import Link from "next/link"
 import { FlushSync } from "@/components/EscapeHatches/manipulating-the-dom-with-refs/FlushSync"
 import { Challenge3 } from "@/components/EscapeHatches/synchronizing-with-effects/Challenge3"
 import { Challenge4 } from "@/components/EscapeHatches/synchronizing-with-effects/Challenge4"
+import { PlanetPlaceTravel } from "@/components/EscapeHatches/lifecycle-of-reactive-effects/PlanetPlaceTravel"
+import { PlanetPlaceTravelUsingCustomHook } from "@/components/EscapeHatches/lifecycle-of-reactive-effects/PlanetPlaceTravelUsingCustomHook"
+import { SuppressingLinter } from "@/components/EscapeHatches/manipulating-the-dom-with-refs/removing-effect-dependencies/SuppressingLinter"
 
  const Page=()=>{
-    return <div className="w-full h-screen grid grid-cols-1 justify-items-center items-center gap-[60px] overflow-scroll lg:grid-cols-3 md:grid-cols-2">
+    return <div className="w-full h-screen my-10 grid grid-cols-1 justify-items-center items-center gap-[60px] overflow-x-scroll lg:grid-cols-3 md:grid-cols-2">
          <div className="h-10 w-1/2 fixed z-10 bg-white inset-x-0 mx-auto flex justify-around top-2 ">
           <Link href={"/"}>
           <button className="p-1 ring-1 rounded-sm hover:bg-yellow-400" >Go To Home</button></Link>
@@ -47,6 +50,15 @@ import { Challenge4 } from "@/components/EscapeHatches/synchronizing-with-effect
   </Container>
   <Container>
     <Challenge4/>
+  </Container>
+  <Container>
+    <PlanetPlaceTravel/>
+  </Container>
+  <Container>
+    <PlanetPlaceTravelUsingCustomHook/>
+  </Container>
+  <Container>
+    <SuppressingLinter/>
   </Container>
     </div>
 }

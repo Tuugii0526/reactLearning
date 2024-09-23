@@ -1,6 +1,6 @@
-import { InfiniteScroll } from "@/components/Scroll/ScrollTwo/InfiniteScroll"
+import { ScrollThree } from "@/components/Scroll/ScrollThree/ScrollThree"
 
 const Page=()=>{
-  return 
+  return <ScrollThree/>
 }
 export default Page
